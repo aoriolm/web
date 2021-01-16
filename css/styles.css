@@ -290,8 +290,10 @@ h1, h2 {
 		padding-bottom: 5px;
 	}
 
-	.span-footer {
-		display: none;
+	.ul-footer li:after {
+		padding-left: 0px;
+		padding-right: 0px;
+		content: none;
 	}
 
 	#div-footer {
