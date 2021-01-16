@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Index | Oscarsclub</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <meta name="author" content="Alexandre Oriol">
+    <meta name="description" content= "Explicación de qué es y cómo funciona Oscarsclub">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header id="pre-header">
+        <div id="main-header">
+            <a class="link_logo" href="index.html">
+                <div id="logo">
+                    <img id="logo-img" alt="Oscarsclub" title="Oscarsclub" src="../img/oscarsclub-isologo.png">
+                    <span id="span_logo">oscars<span id="span_rojo">club</span></span>
+                    <!-- / En el documento dice que el texto de la cabecera debe ser con la fuente Opens Sans, es la que he utilizado, pero en la imagen proporcionada
+                    parece que la fuente usada es la Noto -->
+                </div>
+            </a>
+                
+            <nav>
+                <ul class="ul-header">
+                    <li><a class="link_navegacion" href="clubes-tematicos.html">CLUBES TEMÁTICOS</a></li>
+                    <li><a class="link_navegacion" href="sesiones-2020.html">SESIONES 2020</a></li>
+                </ul>
+            </nav>
+            <div id="div-button"><button class="button1" type="submit">Iniciar sesión</button></div>
+            
+        </div><!-- / #main-header -->
+    </header>
+
+    <main id="main-content">
+
+        <section id="section1a">
+            <h1>¿Qué es Oscars Club?</h1>
+
+            <p class="especial">Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de tener que ir a un espacio físico.</p>
+            
+        </section>
+
+        <section id="section2a">
+            <h2>¿Cómo funciona?</h2>
+            <div id="div2a">
+                <div class="element">
+                    <img id="logo-howto-register" alt="Regístrate" title="Regístrate" src="../img/howto-register.png">
+                    <p class="pie">Regístrate</p>
+                </div>
+                <div class="element">
+                    <img id="logo-howto-club" alt="Inscríbete en un club" title="Inscríbete en un club" src="../img/howto-club.png">
+                    <p class="pie">Inscríbete en un club</p>
+                </div>
+                <div class="element">
+                    <img id="logo-howto-film" alt="Elige una película" title="Elige una película" src="../img/howto-film.png">
+                    <p class="pie">Elige una película</p>
+                </div>
+                <div class="element">
+                    <img id="logo-howto-speech" alt="Disfruta del debate" title="Disfruta del debate" src="../img/howto-speech.png">
+                    <p class="pie">Disfruta del debate</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3a">
+            <h2>Únete al club</h2>
+            <div id="div3a">
+                <div id="parrafos">
+                    <p class="p-tercera">Estamos mirando tu próxima película preferida.</p>
+                    <p class="p-tercera">¿Te lo vas a perder?</p>
+                </div>
+                <form id="formulario">
+                    <input class="input-formulario" type="text" id="nombre" name="nombre_usuario" placeholder="Nombre" required minlength="2" maxlength="128" pattern="^[a-zA-Z](?:[ '\-a-zA-Z]*[a-zA-Z])?$">
+                    <input class="input-formulario" type="email" id="email" name="email_usuario" placeholder="Correo electrónico" required minlength="5" maxlength="128" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <input class="input-formulario" type="password" id="password" name="password_usuario" placeholder="Contraseña" required minlength="8" maxlength="12" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
+                    <p id="pie-formulario">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>OSCARS CLUB. Finalidades:</strong> recogida de datos para la inscripción como socio del interesado. <strong>Legitimación:</strong> Consentimiento del interesado. <strong>Destinatarios:</strong> No están previstas cesiones de datos a terceros, salvo obligación legal. <strong>Derechos:</strong> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información Adicional:</strong> Puede ampliar la información en el enlace de <a class="link_formulario" href="">Aviso legal</a> y <a class="link_formulario" href="">Política de privacidad.</a></p>
+                    <!-- / No he encontrado información sobre los colores de estos enlaces, así que he puesto el color del enlace a rojo y el hover a negro -->
+                    <div id="div-check">
+                        <input type="checkbox" id="leido" name="leido" value="leido" required>
+                        <label id="label-leido" for="leido">He leído y acepto la política de privacidad</label>
+                    </div>
+                    <div id="div-button2">
+                        <button class="button2" type="submit">REGISTRARSE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="pre-footer">
+        <div id="main-footer">
+            <nav>
+                <ul class="ul-footer">
+                    <li><a class="link_footer" href="">Sobre nosotros</a></li>
+                    <li><a class="link_footer" href="">Aviso legal</a></li>
+                    <li><a class="link_footer" href="">Política de privacidad</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="ul-footer">
+                    <li><a class="link_footer" href="">Facebook</a></li>
+                    <li><a class="link_footer" href="">Twitter</a></li>
+                    <li><a class="link_footer" href="">Youtube</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id="div-footer">
+            <p id="p-footer">© 2020 Alexandre Oriol Mena</p>
+            <p class="texto-footer"><a class="link_footer" href="https://www.flaticon.com" target="_blank">Iconos flaticon.com</a></p>
+            <p class="texto-footer"><a class="link_footer" href="https://unsplash.com" target="_blank">Imágenes unplash.com</a></p>
+        </div>
+            
+
+        
+    </footer>
+
+</body>
+
+</html>
